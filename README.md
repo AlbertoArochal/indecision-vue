@@ -1,4 +1,4 @@
-# 03-fundaments
+# Indecision-vue
 
 ## Project setup
 
