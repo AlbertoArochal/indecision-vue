@@ -31,7 +31,7 @@ export default {
         };
     },
     watch: {
-        question(value: string, oldvalue: string) {
+        question(value: string) {
             this.isValidQuestion = false;
             if (!value.includes("?")) return;
             this.isValidQuestion = true;

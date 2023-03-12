@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <h2>{{ customTitle }}</h2>
     <p>{{ count }} <sup>2</sup> = {{ getSquareValue() }}</p>
     <div>
@@ -78,4 +78,4 @@ button:active {
     transform: scale(0.98);
     transition: all 0.2s ease-in-out;
 }
-</style> -->
+</style>
