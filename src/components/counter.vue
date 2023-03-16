@@ -1,9 +1,11 @@
 <template>
     <h2>{{ customTitle }}</h2>
+    <p data-testid="counter">{{ count }}</p>
+
     <p>{{ count }} <sup>2</sup> = {{ getSquareValue() }}</p>
     <div>
-        <button @click="decrement">Decrement</button>
-        <button @click="increment">Increment</button>
+        <button data-testid="decrement" @click="decrement">Decrement</button>
+        <button data-testid="increment" @click="increment">Increment</button>
     </div>
 </template>
 
