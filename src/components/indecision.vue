@@ -40,13 +40,19 @@ export default {
     },
     methods: {
         async getAnswer() {
-            this.answer = "Loading...";
-            const { answer, image } = await fetch("https://yesno.wtf/api").then(
-                (response) => response.json()
-            );
+            try {
+                this.answer = "Loading...";
+                const { answer, image } = await fetch(
+                    "https://yesno.wtf/api"
+                ).then((response) => response.json());
 
-            this.answer = answer === "yes" ? "Si" : "No!";
-            this.image = image;
+                this.answer = answer === "yes" ? "Si" : "No!";
+                this.image = image;
+            } catch (error) {
+                this.answer = "The img can't be loaded";
+                this.image = null;
+                console.log('IndecisionComponent: "error"');
+            }
         },
     },
 };
